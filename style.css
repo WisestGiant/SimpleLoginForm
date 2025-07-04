@@ -1,0 +1,147 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* This is our main container */
+.container{
+    height: 100vh;
+    display: flex;  /* Make the container at least the full height of the viewport */
+}
+
+/* Styling the left and right columns */
+.left-column{
+    width: 35%;
+    background-image: url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-banner {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    margin-top: 25vh; /* Pushes the banner down from the top */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Creates space between the logo and text */
+    color: white;
+}
+
+.logo-banner img {
+    height: 100px; /* Control the size of the logo */
+}
+
+.right-column{
+    width: 65%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.header-text{
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
+.header-text h2:nth-of-type(1){
+    margin-bottom: 2rem;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* A subtle shadow */
+}
+
+.form-container h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+}
+
+.form-row {
+    padding-left: 2rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+
+     /* Creates space between the form groups in a row */
+     /* Creates vertical space between rows */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stacks the label on top of the input */
+    flex: 1; /* Each form group will take up equal space in the row */
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none; /* Removes the default browser outline */
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* A soft blue glow */
+}
+
+.footer-area {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 2rem;
+}
+
+button[type="submit"]{
+    background-color: #596D48;
+    color: white;
+    padding: 1rem 2.5rem; /* More padding horizontally than vertically */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #4a5a3c; /* A slightly darker green for hover effect */
+}
+
+.footer-area p {
+    font-weight: 500;
+}
+
+.footer-area a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none; /* Removes the default underline */
+}
+
+.footer-area a:hover {
+    text-decoration: underline; /* Adds underline on hover for clarity */
+}
